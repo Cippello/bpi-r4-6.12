@@ -5,7 +5,8 @@ rm -rf openwrt
 rm -rf mtk-openwrt-feeds
 
 git clone --branch openwrt-25.12 https://github.com/openwrt/openwrt.git openwrt
-cd openwrt; git checkout 00dcdd7451487dfb63c6c3bbd649a547c76e1a13; cd -;		#firmware: Add support for Airoha EN7581/AN7583 NPU variant firmware
+#cd openwrt; git checkout 00dcdd7451487dfb63c6c3bbd649a547c76e1a13; cd -;		#firmware: Add support for Airoha EN7581/AN7583 NPU variant firmware
+cd openwrt; git checkout v25.12.5; cd -;		#OpenWrt 25.12.5 release
 
 git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds
 cd mtk-openwrt-feeds; git checkout 95d10b2875cde36924023380ac098dd5664dcdf3; cd -;	#[openwrt-25][common][doc][Update documentation for OpenWrt 25.12]
